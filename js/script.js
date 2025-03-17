@@ -31,6 +31,10 @@ let price = (0.21 * userKm).toFixed(2);
 if(userAge < 18){
     finalPrice = (price - price * 20 / 100).toFixed(2);
 }
+// aggiungiamo sconto over 65 del 40%
+else if(userAge > 65){
+    finalPrice = (price - price * 40 / 100).toFixed(2);
+} 
 else{
     finalPrice = price;
 }
