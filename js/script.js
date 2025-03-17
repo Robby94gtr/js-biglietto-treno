@@ -12,7 +12,7 @@ Buon lavoro! */
 
 // Chiedo all'utente il numero di km che vuole percorrere
 
-let userKm = parseInt(prompt("Inserire numero di Km che si vuole percorrere"));
+let userKm = parseFloat(prompt("Inserire numero di Km che si vuole percorrere"));
 
 console.log(userKm + " " + "Km")
 
@@ -22,5 +22,8 @@ let userAge = parseInt(prompt("Inserire età del passeggero"));
 
 console.log(userAge + " " + "anni")
 
+// calcolo prezzo in base ai km
 
+let price = ((0.21 * userKm).toFixed(2) + "€");
 
+console.log(price)
