@@ -24,20 +24,20 @@ console.log(userAge + " anni")
 
 // calcolo prezzo in base ai km
 
-let price = (0.21 * userKm).toFixed(2);
+let price = 0.21 * userKm;
 
 // se l'utente è minorenne applichiamo sconto del 20%
 
 if(userAge < 18){
-    finalPrice = (price - price * 20 / 100).toFixed(2);
+    finalPrice = price - price * 20 / 100;
 }
 // aggiungiamo sconto over 65 del 40%
 else if(userAge > 65){
-    finalPrice = (price - price * 40 / 100).toFixed(2);
+    finalPrice = price - price * 40 / 100;
 } 
 else{
     finalPrice = price;
 }
 
 
-console.log(`ìl prezzo è di ${finalPrice}€`);
+console.log(`ìl prezzo è di ${finalPrice.toFixed(2)}€`);
