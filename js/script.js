@@ -15,3 +15,12 @@ Buon lavoro! */
 let userKm = parseInt(prompt("Inserire numero di Km che si vuole percorrere"));
 
 console.log(userKm + " " + "Km")
+
+// Chiedo all'utente l'età del passeggero
+
+let userAge = parseInt(prompt("Inserire età del passeggero"));
+
+console.log(userAge + " " + "anni")
+
+
+
