@@ -14,16 +14,26 @@ Buon lavoro! */
 
 let userKm = parseFloat(prompt("Inserire numero di Km che si vuole percorrere"));
 
-console.log(userKm + " " + "Km")
+console.log(userKm + " Km")
 
 // Chiedo all'utente l'età del passeggero
 
 let userAge = parseInt(prompt("Inserire età del passeggero"));
 
-console.log(userAge + " " + "anni")
+console.log(userAge + " anni")
 
 // calcolo prezzo in base ai km
 
-let price = ((0.21 * userKm).toFixed(2) + "€");
+let price = (0.21 * userKm).toFixed(2);
 
-console.log(price)
+// se l'utente è minorenne applichiamo sconto del 20%
+
+if(userAge < 18){
+    finalPrice = (price - price * 20 / 100).toFixed(2);
+}
+else{
+    finalPrice = price;
+}
+
+
+console.log(`ìl prezzo è di ${finalPrice}€`);
